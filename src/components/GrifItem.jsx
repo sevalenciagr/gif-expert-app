@@ -1,8 +1,6 @@
-
+import PropTypes from 'prop-types'
 
 export const GrifItem = ({ title, url, id }) => {
-
-    console.log({ title, url, id });
 
   return (
     <div className="card">
@@ -10,4 +8,10 @@ export const GrifItem = ({ title, url, id }) => {
         <p>{ title }</p>
     </div>
   )
+}
+
+
+GrifItem.PropTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 }
